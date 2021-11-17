@@ -1,0 +1,122 @@
+@media all and (min-width:801px),screen and (orientation:landscape)
+{
+header{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 55px;
+    background-color: chocolate;
+    padding: 50px;
+    position: sticky;
+}
+nav{
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    padding: 10px;
+    overflow: hidden;
+    position: sticky;
+}
+nav a{
+    color: chocolate;
+    background-color: black;
+    text-align: center;
+    font-size: larger;
+    padding: 10px;
+}
+nav a:hover{
+    color: darkgreen;
+    position:sticky;
+}
+ul{
+    list-style-type: square; 
+}
+section{
+    background-color: chocolate;
+    padding: 5px;
+    position:sticky;
+}
+.reference{
+    font-size: 28px;
+}
+.name{
+    font-size: 20px;
+    text-align: center;
+}
+footer{
+    background-color: black;
+    color: chocolate;
+    padding: 10px;
+}
+aside{
+    color:chocolate;
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+    height: 200px;
+    width: 200px;
+    float: right;
+    overflow: auto;
+}
+img{
+    border: 2px solid black;
+    object-fit: fill;
+}
+}
+@media all and (max-width: 800px) and (min-width:350px)
+{
+    header{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 35px;
+        background-color: chocolate;
+        padding: 40px;
+    }
+    nav{
+        background-color: black;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        padding: 7px;
+        overflow: hidden;
+    }
+    nav a{
+        color: chocolate;
+        background-color: black;
+        text-align: center;
+        font-size: larger;
+        padding: 7px;
+        float: left;
+    }
+    nav a:hover{
+        color: darkgreen;
+    }
+    section{
+        background-color: chocolate;
+        padding: 5px;
+    }
+    .reference p,ul li,ol li,aside{
+        font-size: 14px;
+    }
+    aside{
+        height: 150px;
+        width: 150px;
+        color:chocolate;
+        background-color: black;
+        text-align: center;
+        padding: 10px;
+        float: right;
+        overflow: auto;
+    }
+    .name{
+        font-size: 10px;
+    }
+    img{
+        height: 200px;
+        width: 200px;
+    }
+    footer{
+        background-color: black;
+        color: chocolate;
+        padding: 7px;
+        font-size: small;
+    }
+}

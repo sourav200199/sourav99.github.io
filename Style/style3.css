@@ -1,0 +1,109 @@
+*{
+    background-color: khaki;
+    color: black;
+    margin: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column; /*instead flex-flow:column wrap; can also be used */
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+header,footer,main,nav,aside{
+    height: fit-content;
+    /*width: fit-content;*/
+    border: 2px solid black;
+    align-self: stretch;
+    padding: 10px;
+}
+aside{
+    float: right;
+    height: 100px;
+    width: 150px;
+    overflow: auto;
+}
+header,footer,.name{
+    text-align: center;
+}
+.welcome{
+    font-size: 52px;
+    color: wheat;
+    background-image: url("../Images/background.jfif");
+    background-attachment: fixed;
+}
+.google{
+    /*margin-left: auto;*/
+}
+header,footer{
+    font-size: 28px;
+    color: wheat;
+    background-image: url("../Images/background.jfif");
+    background-attachment: fixed;
+    padding: 60px;
+}
+nav{
+    background-color: black;
+    display: flex;
+}
+nav a{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: larger;
+    transition: background 2s,font-weight 0s,border-radius 0s;
+    text-decoration: none;
+}
+main{
+    flex:2 3;
+}
+nav a:hover{
+    background-color: blue;
+    font-weight: 700;
+    border-radius: 10px;
+}
+section{
+    padding: 50px;
+}
+  .carousel-cell {
+    width: 66%;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .carousel-cell img{
+      max-width: 50%;
+      max-height: 100%;
+      border-radius: 60%;
+  }
+  .icon{
+      text-align: center;
+      color: khaki;
+      padding: 0px;
+      margin: 0px;
+  }
+  .icon1{
+      color: black;
+  }
+#fb{
+      color: #1778f2;
+  }
+  #insta{
+    color: #e95950;
+}
+#btn{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+@media screen and (max-width:600px){
+    nav{
+        flex-direction: column;
+    }
+    footer div{
+        display: flex;
+        flex-direction: column; 
+        flex-wrap: wrap;
+    }
+}
